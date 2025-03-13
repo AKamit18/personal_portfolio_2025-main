@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amit- Experience</title>
+    <link rel="stylesheet" href="/experience/experience.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.4/css/boxicons.min.css">
+</head>
+<body>
+    <header>
+        <h1>GridX</h1>
+        <nav>
+            <a href="/main/index.html">Home</a>
+            <a href="/profile/index.html">About</a>
+            <a href="/contact/contact.html">Contact</a>
+        </nav>
+        <p><span>Let's talk</span></p>
+
+        <div class="hamburger" id="hamburger">
+            <i class="bx bx-menu"></i>
+        </div>
+
+        <!-- <div class="light"><i class='bx bxs-moon' style='color:#ffffff'  ></i><i class='bx bxs-sun' style='color:#fff406'  ></i></div> -->
+    </header>
+    <div class="mobile-nav" id="mobile-nav">
+        <a href="/main/index.html">Home</a>
+        <a href="/profile/index.html">About</a>
+        <a href="/project/projects.html">Projects</a>
+        <a href="/certificate/certificate.html">Certificates</a>
+        <a href="/contact/contact.html">Contact</a>
+    </div>
+    <section class="timeline">
+        <h2 class="title">Experience</h2>
+        <div class="timeline-container">
+
+            <div class="timeline-item">
+                <div class="date">March 2023 - Present</div>
+                <!-- <div class="icon">
+                    <i class='bx bxs-edit-location' style='color:#24c3cb'></i>
+                </div> -->
+                <a href="https://www.mindstix.com/" target="_blank" class="icon"> 
+                    <i class='bx bxs-edit-location' style='color:#24c3cb'></i>
+                </a>
+                <div class="content">
+                    <h3>Mindstix Software Labs Pvt. Ltd.</h3>
+                    <h4>Backend Developer - MTS</h4>
+                    <p> • The Product is being used in more than 100 world's most iconic hotels to digitize and elevate the guest journey.
+                        • Worked in Agile environment and contributed to end-to-end development of new Microservices and Web Applications,
+                        including deployment processes. Designed and developed new features. Tested and debugged existing features and bugs fixed.
+                        • Integrated multiple 3rd party APIs and worked on different API authentication and authorization techniques.
+                        • Collaborated with the frontend team to establish scalable efficient API flow design and API responses handling, improving
+                        frontend-backend communication and reducing system response time by 40-50%.
+                        • Improved technical system performance by 50 to 60% through code optimization, enhancing the overall responsiveness.
+                        • Worked in the migration team to implement product codebase from Grails 2.1.0 and Java 7 to Grails 5.2.0 and Java 11.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="date">March 2022 - May 2022</div>
+                <a href="https://www.capgemini.com/" target="_blank" class="icon"> 
+                    <i class='bx bxs-edit-location' style='color:#24c3cb'></i>
+                </a>
+                <div class="content">
+                    <h3>Capgemini Technology Service India Limited.</h3>
+                    <h4>Intern - Analyst</h4>
+                    <p> • Intensively trained in Java, demonstrating strong proficiency in object-oriented programming (OOP).
+                        • Skills in HTML, CSS, and JavaScript to create interactive and responsive UI/UX for web applications.
+                        • Developed effective communication, teamwork, and interpersonal skills through comprehensive soft skills sessions..
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const mobileNav = document.getElementById('mobile-nav');
+
+        hamburger.addEventListener('click', () => {
+            mobileNav.classList.toggle('active');
+            hamburger.innerHTML = mobileNav.classList.contains('active') 
+                ? '<i class="bx bx-x"></i>' 
+                : '<i class="bx bx-menu"></i>';
+        });
+        document.querySelectorAll(".mobile-nav a").forEach(ele=>{
+            ele.addEventListener('click',()=>{
+                mobileNav.classList.remove('active');
+                hamburger.innerHTML = '<i class="bx bx-menu"></i>'
+            })
+        })
+    </script>
+</body>
+</html>

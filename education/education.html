@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amit - Education</title>
+    <link rel="stylesheet" href="/education/education.css">
+    <script defer src="/education/scriptEducation.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>GridX</h1>
+        <nav>
+            <a href="/main/index.html">Home</a>
+            <a href="/profile/index.html">About</a>
+            <a href="/contact/contact.html">Contact</a>
+        </nav>
+        <p><span>Let's talk</span></p>
+
+        <div class="hamburger" id="hamburger">
+            <i class="bx bx-menu"></i>
+        </div>
+
+        <!-- <div class="light"><i class='bx bxs-moon' style='color:#ffffff'  ></i><i class='bx bxs-sun' style='color:#fff406'  ></i></div> -->
+    </header>
+    <div class="mobile-nav" id="mobile-nav">
+        <a href="/main/index.html">Home</a>
+        <a href="/profile/index.html">About</a>
+        <a href="/project/projects.html">Projects</a>
+        <a href="/certificate/certificate.html">Certificates</a>
+        <a href="/contact/contact.html">Contact</a>
+    </div>
+    <div class="timeline">
+        <div class="line"></div>
+
+        <!-- <div class="container left">
+            <div class="content">
+                <h2>Kindergarten</h2>
+                <p>School Name: XYZ Kindergarten</p>
+                <p>Passed Out: 2005</p>
+            </div>
+        </div> -->
+
+        <div class="container right">
+            <div class="content">
+                <h2>Primary School</h2>
+                <p>- St. Joseph School</p>
+                <!-- <p>Passed Out: 2010</p> -->
+            </div>
+        </div>
+
+        <div class="container left">
+            <div class="content">
+                <h2>Matriculation</h2>
+                <p> - Church School Beldih</p>
+                <!-- <p>Percentage: 85%</p> -->
+                <!-- <p>Year: 2015</p> -->
+            </div>
+        </div>
+
+        <div class="container right">
+            <div class="content">
+                <h2>Secondary High School</h2>
+                <p> - North Eastern Regional Institute of Science and Technology (NERIST)</p>
+                <!-- <p>Percentage: 88%</p> -->
+                <p> - Passed Out: 2018</p>
+            </div>
+        </div>
+
+        <div class="container left">
+            <div class="content">
+                <h2>Graduation</h2>
+                <p>- North Eastern Regional Institute of Science and Technology (NERIST)</p>
+                <p>- B.Tech in Computer Science</p>
+                <p>- CGPA: 8.40</p>
+                <p>- Passed Out: 2022</p>
+            </div>
+        </div>
+
+    </div>
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const mobileNav = document.getElementById('mobile-nav');
+
+        hamburger.addEventListener('click', () => {
+            mobileNav.classList.toggle('active');
+            hamburger.innerHTML = mobileNav.classList.contains('active') 
+                ? '<i class="bx bx-x"></i>' 
+                : '<i class="bx bx-menu"></i>';
+        });
+        document.querySelectorAll(".mobile-nav a").forEach(ele=>{
+            ele.addEventListener('click',()=>{
+                mobileNav.classList.remove('active');
+                hamburger.innerHTML = '<i class="bx bx-menu"></i>'
+            })
+        })
+    </script>
+</body>
+</html>

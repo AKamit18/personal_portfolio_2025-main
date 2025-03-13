@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif; /* Use a specific font */
+    background-color: #f4f4f4; /* Slightly off-white background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column; /* Align items vertically */
+    text-align: center;
+}
+
+.container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow to the container */
+    max-width: 800px; /* Limit container width */
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+    border-radius: 5px; /* Add rounded corners to the image */
+}
+
+.message {
+    font-size: 1.3em;
+    color: #333; /* Darker text color */
+    line-height: 1.6;
+}
