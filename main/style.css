@@ -758,10 +758,10 @@ footer h1{
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            gap: 40px;
+            gap: 1px;
         }
         .last-row .colum1 .dabba{
-        margin: 20px 0;
+        margin: 5px 0;
         height: 100%;
         width: 80%;
         padding: 10px 0;

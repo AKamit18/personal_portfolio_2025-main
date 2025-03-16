@@ -1,5 +1,6 @@
 const images = [
     "/images/certificates/c-1.png",
+    "https://udemy-certificate.s3.amazonaws.com/image/UC-6d69b053-6e77-497e-8075-87979cfa652d.jpg",
     "/images/certificates/c-14.png",
     "/images/certificates/c-2.png",
     "/images/certificates/c-10.png",
